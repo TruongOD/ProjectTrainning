@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <Folder Include="Infrastructure\Dependencies\" />
+    <Folder Include="Services\Implements\" />
   </ItemGroup>
 
 </Project>
