@@ -1,17 +1,18 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ProductManager.Entity
+namespace ProjectTrainning.Entities
 {
     public class Base
     {
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
+        public DateTime CreatedDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
+        public DateTime LastModifiedBy { get; set; }
+        public Guid CreatedBy { get; set; }
+        public Guid UpdatedBy { get; set; }
+        public DateTime LastModifiedDate { get; set; }
         public bool IsDeleted { get; set; }
-        public DateTime CreateDate { get; set; }
-        public DateTime UpdateDate { get; set; }
-        public string Createdby { get; set; }
-        public string Updatedby { get; set; }
-
     }
 }
